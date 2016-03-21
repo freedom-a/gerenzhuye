@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人站</title>
+	<script src="./js/jquery.min.js"> </script>
+	<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+	</script>
+	<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
+</head>
+<body>
+<!--头部背景开始-->
+ <div id="top-top" class="headerbg">
+	 <!--头部开始-->
+	   <div class="header">
+		 <!--内容开始-->
+			  <div class="container">
+				   <div class="logo">
+						<a href="#">个人作品站</a>
+				   </div>
+				  <!--导航开始-->
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">关于我</a></li>
+						 <li><a class="scroll" href="#skills">技能</a></li>
+						 <li><a class="scroll" href="#port">作品集</a></li>
+						 <li><a class="scroll" href="#contact">联系我</a></li>
+					 </ul>
+				 </div>
+				  <!--导航结束-->
+					<div class="clear"></div>
+			  </div>
+		 <!--内容结束-->
+	   </div>
+	 <!--头部结束-->
+	 <!--Banner开始-->
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">
+			      <div class="bannerlogo">
+					  <img src="./images/diamond.png">
+			      </div>
+			      <div class="bannerhead">
+				      <h2>我的名字是<span>田改花</span></h2>
+				      <h3>前端工程师</h3>
+				      <p></p>
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  <!--Banner结束-->
+ </div>
+ <!--头部背景结束-->
+ <!--内容开始-->
+ <div class="content">
+	 <!--关于我开始-->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>关于我<span> </span></h2>
+				  </div>
+				 <span><p id="gong">我的工作经历</p></span>
+					 
+			  <div class="years">	 
+				<h4><b>2015.9~2016.3</b></h4>
+				 <span><h4>前端工程师</h4></span>
+				 <p>在山西哎哟科技有限公司任职前端工程师</p>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 <!--关于我结束-->
+	 
+	<!--技能开始-->
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>技能<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+								<div class="skill-grids text-center">
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-1"></div>									
+												 <h3>AJAX</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-2"></div>									
+												 <h3>HTML5CSS3</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-3"></div>									
+												 <h3>JQUERY</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-4"></div>									
+												 <h3>JAVASCRIPT</h3>	
+											 </div>								  
+										</div>
+										<div class="clearfix"> </div>
+								  </div>
+						   </div>
+					  </div>
+					<!---->
+					 <script type="text/javascript" src="./js/circles.js"></script>
+								 <script>
+									var colors = [
+											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+										];
+									for (var i = 1; i <= 5; i++) {
+										var child = document.getElementById('circles-' + i),
+											percentage = 50 + (i * 10);
+											
+										Circles.create({
+											id:         child.id,
+											percentage: percentage,
+											radius:     80,
+											width:      15,
+											number:   	percentage / 10,
+											text:       '0%',
+											colors:     colors[i - 1]
+										});
+									}
+							
+					</script>
+					
+					<!--/-->
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 <!--技能结束-->
+		 <!--作品集开始-->
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>作品集<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="#"><img src="./images/monitr1.png"></a>
+						  <p>天猫</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/tianmao/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr2.png"></a>
+						  <p>小米</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/xiaomis/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr3.png"></a>
+						  <p>一号店</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/yihaodian "><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="#"><img src="./images/monitr1.png"></a>
+						  <p>优站精选</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/youzhanjingxuan/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr2.png"></a>
+						  <p>苹果</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/apples/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr3.png"></a>
+						  <p>画板</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/sketch/"><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="#"><img src="./images/monitr1.png"></a>
+						  <p>像素鸟</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/canvas-flapy-bird/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr2.png"></a>
+						  <p>五子棋</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/wuziqis/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr3.png"></a>
+						  <p>icloud提醒事项</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/angular-icloud-reminder/ "><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="#"><img src="./images/monitr1.png"></a>
+						  <p>扫雷</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/saoleis/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr2.png"></a>
+						  <p>fullPage</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/fullPage/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="#"><img src="./images/monitr2.png"></a>
+						  <p>ZAKER NewsAPP</p>
+						  <a class="rightarrow" href="http://freedom-a.github.io/NewsAPP/"><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+				  
+			  </div>
+		 </div>
+  </div>
+  <!--作品集结束-->
+  
+  <!--联系我开始-->
+  <div  id="contact" class="footer">
+      <div class="container">
+	  
+		   <div class="contact-section text-center">
+			  <h2><span> </span>联系我<span> </span></h2>
+		  </div>
+		  <p class="huhu">联系电话:18203583046<br/>联系邮箱:676433759@qq.com</p>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+	 </div> 
+ </div>
+ <!--联系我结束-->
+ </body>
+ </html>
+ 
+   
